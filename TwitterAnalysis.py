@@ -45,7 +45,7 @@ tokenized_words = word_tokenize(cleaned_text, "english")
 
 final_words = []
 for word in tokenized_words:
-    if word not in stopwords('english'):
+    if word not in stopwords.words('english'):
         final_words.append(word)
 
 # print(final_words)
